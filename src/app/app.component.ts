@@ -61,7 +61,6 @@ export class ReposDataSource extends DataSource<GithubRepo> {
     super();
   }
   connect(): Observable<GithubRepo[]> {
-    console.log(this.repos.getValue());
     return this.repos;
   }
 
